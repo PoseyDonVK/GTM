@@ -1,10 +1,9 @@
 import pygame
 
-
 class SettingsWindow:
     def __init__(self):
-        self.window_width = 1200
-        self.window_height = 800
+        self.window_width = 960
+        self.window_height = 540
         self.window = pygame.display.set_mode((self.window_width, self.window_height))
         self.original_image = pygame.image.load('settings.jpg')  # Путь к изображению для одиночной игры
         self.image = pygame.transform.scale(self.original_image, (self.window_width, self.window_height))
